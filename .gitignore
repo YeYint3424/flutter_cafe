@@ -31,6 +31,24 @@ migrate_working_dir/
 .pub/
 /build/
 
+# Visual Studio Code related
+.vscode/
+*.code-workspace
+
+# Flutter/Dart/Pub related
+**/build/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+.idea/
+.vscode/
+android/app/debug/
+android/app/profile/
+android/app/release/
+
 # Symbolication related
 app.*.symbols
 
