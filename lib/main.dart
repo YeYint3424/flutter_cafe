@@ -1,7 +1,8 @@
+import 'package:cafe/home.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MaterialApp(home: SandBox()));
+  runApp(const MaterialApp(home: Home()));
 }
 
 class SandBox extends StatelessWidget {
@@ -17,26 +18,23 @@ class SandBox extends StatelessWidget {
         ),
         backgroundColor: Colors.brown[700],
       ),
-      body: Column(
+      body: Row(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Container(
             padding: const EdgeInsets.all(20),
             color: Colors.red,
-            width: 100,
             child: const Text('One'),
           ),
           Container(
             padding: const EdgeInsets.all(20),
             color: Colors.green,
-            width: 200,
             child: const Text('Two'),
           ),
           Container(
             padding: const EdgeInsets.all(20),
             color: Colors.blue,
-            width: 300,
             child: const Text('Three'),
           ),
         ],

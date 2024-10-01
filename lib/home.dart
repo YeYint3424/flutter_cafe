@@ -1,3 +1,4 @@
+import 'package:cafe/coffee_prefs.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
@@ -14,20 +15,21 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.brown[700],
         centerTitle: true,
       ),
-      body: Container(
-        color: Colors.yellow,
-        // width: 200,
-        // height: 400,
-        padding: const EdgeInsets.all(20),
-        margin: const EdgeInsets.fromLTRB(50, 30, 0, 0),
-        child: const Text(
-          "Coffee Body",
-          style: TextStyle(
-              decoration: TextDecoration.underline,
-              fontStyle: FontStyle.italic,
-              letterSpacing: 4,
-              fontSize: 18),
-        ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Container(
+            color: Colors.brown[200],
+            padding: const EdgeInsets.all(20),
+            child: const Text('How I like coffee....'),
+          ),
+          Container(
+            color: Colors.brown[200],
+            padding: const EdgeInsets.all(20),
+            child: const CoffeePrefs(),
+          )
+        ],
       ),
     );
   }
